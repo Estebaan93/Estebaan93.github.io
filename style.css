@@ -1,7 +1,65 @@
-header{
+section{
 	display: flex;
+    background-color: white;
+    height: 65px;
+    border-radius: 20px;
 }
-
+button{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0px;
+    background: transparent;
+    gap: .55rem;
+    justify-content: end;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+button > div {
+    background: black;
+    height: 1px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+button:hover div:first-child{
+    transform: rotate(45deg);
+}
+button:hover div:nth-child(2){
+    opacity: 0;
+}
+button:hover div:last-child{
+    transform: rotate(-45deg);
+}
+.Resultado-fecha{
+    font-size: xx-small;
+    padding: 13px;
+    color: #524c4c;
+    background-color: #ece9e9;
+    margin: 0;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left: 1px solid #a5a6a7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.VistaPreviaResultadoMaster{
+    font-size: xx-small;
+    padding: 13px;
+    background-color: #ece9e9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #524c4c;
+    border-left: 1px solid #a5a6a7;
+}
+.Equipo2R1Master, .Equipo1R1Master,.DivisionE1R1Master, .DivisionE2R1Master{
+    display: flex;
+}
+.EquiposR1Master{
+padding: 0%;
+border-top: 10px;
+}
 
 body {
     background-color: rgb(211, 230, 236);
