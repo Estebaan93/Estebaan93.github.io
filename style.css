@@ -53,12 +53,51 @@ button:hover div:last-child{
     color: #524c4c;
     border-left: 1px solid #a5a6a7;
 }
-.Equipo2R1Master, .Equipo1R1Master,.DivisionE1R1Master, .DivisionE2R1Master{
-    display: flex;
+.Resultado1interno, .Resultado2interno{
+	padding-left: 10px;
+	font-size: 12px;
+	padding-right: 10px;
+	
 }
-.EquiposR1Master{
-padding: 0%;
-border-top: 10px;
+.Resultado1Master, .Resultado2Master{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: small;
+	border-left: 1px solid #a5a6a7;
+}
+.Resultado2Master{
+	padding-right: 7px;
+}
+.DivisionE1Master{
+    display: flex;
+	padding-left: 7px;
+}
+.DivisionE2Master{
+	display: flex;
+	padding-left: 7px;
+	padding-top: 2px;
+}
+.TablaE1Master, .TablaE2Master{
+	display: flex;
+	padding-top: 3px;
+}
+
+
+.Logos{
+	padding-left: 7px;
+}
+.EquiposR1Master, .EquiposR2Master{
+	padding: 0px;
+	border-top: 10px;
+	margin:0;
+}
+.MarcaE1R1MAS{
+	padding-left: 9px;
+}
+.MarcaE2R1MAS, .MarcaE2R2MAS{
+	 padding-left: 7px
+}
+.MarcaE1R2MAS{
+	padding-left: 10px;
 }
 
 body {
