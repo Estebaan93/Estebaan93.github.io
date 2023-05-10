@@ -3,6 +3,8 @@ section{
     background-color: white;
     height: 65px;
     border-radius: 20px;
+    
+
 }
 button{
     display: flex;
@@ -15,6 +17,8 @@ button{
     justify-content: end;
     padding-left: 5px;
     padding-right: 5px;
+    position: relative;
+    left: 50px;
 }
 button > div {
     background: black;
@@ -34,7 +38,6 @@ button:hover div:last-child{
     transform: rotate(-45deg);
 }
 button:hover > .Menu-desplegable > ul{
-    display: block;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -44,7 +47,7 @@ button:hover > .Menu-desplegable > ul{
 }
 .Resultado-fecha{
     font-size: xx-small;
-    padding: 13px;
+    padding: 5px;
     color: #524c4c;
     background-color: #ece9e9;
     margin: 0;
@@ -112,6 +115,8 @@ button:hover > .Menu-desplegable > ul{
 
 body {
     background-color: rgb(211, 230, 236);
+    background-image: url("src/pexels-markus-spiske-114296.jpg");
+    background-size: cover;
 }
 h1{
     color:black;
