@@ -55,6 +55,9 @@ padding-left: 70px;
 .articulo > h1{
     text-transform: uppercase;
     color: white;
+    font-size: 43px;
+    font-family: DIN_Regular,Arial,Verdana,sans-serif;
+    
 }
 .articulo>p{
     font-size: large;
