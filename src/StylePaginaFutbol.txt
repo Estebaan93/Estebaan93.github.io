@@ -1,0 +1,168 @@
+section{
+	display: flex;
+    background-color: white;
+    height: 65px;
+    border-radius: 20px;
+    
+
+}
+.Section2{
+   display: flex;
+    /*width: 1000px;*/
+    height: 200px;
+}
+.Section2 img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.Section2 img:hover{
+    cursor: crosshair;
+    width: 150px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.button{
+    width: 3rem;
+    height: 3rem;
+    border: 0px;
+    background: transparent;
+    gap: .55rem;
+    justify-content: end;
+    padding-left: 5px;
+    padding-right: 5px;
+    left: 50px;
+   /* position: relative;
+    display: flex;*/
+    padding-top: 25px;   
+}
+
+.button>a{
+color: black;
+text-decoration: none;
+}
+
+/*button:hover div:first-child{
+    transform: rotate(45deg);
+}
+button:hover div:nth-child(2){
+    opacity: 0;
+}
+button:hover div:last-child{
+    transform: rotate(-45deg);
+}*/
+.button:hover > ul{
+    display: block;
+    position: absolute;
+}
+.button li:hover{
+    background-color: black;
+}
+.button li a{
+    color: white;
+    padding: 15px 15px 20px;
+    text-decoration: none;
+}
+.button li{
+    padding: 7px;
+    border-radius: 10px;
+}
+.button > ul{
+    margin: 0px;
+    padding: 5px;
+    padding-left: 0px;
+    overflow: hidden;
+    display: none;
+    list-style-type: disc;
+    list-style: none;
+    text-align: left;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    border-radius: 10px;
+}
+.Resultado-fecha{
+    font-size: xx-small;
+    padding: 13px;
+    color: #524c4c;
+    background-color: #ece9e9;
+    margin: 0;
+    border: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left: 1px solid #a5a6a7;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Ig{
+    width: 320px;
+    height: 240px;
+}
+.VistaPreviaResultadoMaster, .VistaPreviaResultadoMaxi{
+    font-size: xx-small;
+    padding: 13px;
+    background-color: #ece9e9;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #524c4c;
+    border-left: 1px solid #a5a6a7;	
+}
+#Resultado-fechaMaxi{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.Resultado1interno, .Resultado2interno, .Resultado3interno, .Resultado4interno{
+	padding-left:15px;
+	font-size: 12px;
+	text-align:center;
+}
+.Resultado1Master, .Resultado2Master, .Resultado3Master, .Resultado4Master, .Resultado1Maxi, .Resultado2Maxi, .Resultado3Maxi{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: small;
+	border-left: 1px solid #a5a6a7;
+	padding-right: 15px;
+}
+.DivisionE1Master, .DivisionE1Maxi, .DivisionE2Maxi, .DivisionE3Maxi{
+    display: flex;
+	padding-left: 7px;
+}
+.DivisionE2Master, .DivisionE3Master{
+	display: flex;
+	padding-left: 7px;
+	padding-top: 2px;
+}
+.TablaE1Master, .TablaE2Master, .TablaE1Maxi, .TablaE2Maxi{
+	display: flex;
+	padding-top: 3px;
+}
+.Logos{
+	padding-left: 7px;
+}
+.EquiposR1Master, .EquiposR2Master, .EquiposR3Master, .EquiposR1Maxi, .EquiposR2Maxi{
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top: 10px;
+	margin:0;
+}
+.MarcaE1R1MAS, .MarcaE1R1MAX, .MarcaE1R3MAS{
+	padding-left: 9px;
+}
+.MarcaE2R1MAS, .MarcaE2R2MAS, .MarcaE2R3MAS, .MarcaE2R1MAX, .MarcaE1R2MAX, .MarcaE2R2MAX{
+	 padding-left: 7px
+}
+.MarcaE1R2MAS{
+	padding-left: 10px;
+}
+
+body {
+    /*background-color: rgb(211, 230, 236);*/
+    background-image: url("src/starlink-1.jpg");
+    background-size: cover;
+}
+h1{
+    color:black;
+    text-align: center;
+}
+p {
+    text-align: center;
+}

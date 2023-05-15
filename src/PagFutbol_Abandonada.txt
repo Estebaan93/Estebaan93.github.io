@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">                      <!-- Elemento raiz -->
+	<head>                                <!-- Cabeza, elemento que actuan destras de escenas -->  
+		<title>Liga de veteranos futbol seniors</title>                              
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">  <!-- Aqui podes incluir archivos externos, js, css-->
+    
+	</head>
+	<body>                                                    <!-- Cuerpo -->
+		<section id="SeccionGlobal">
+			<div class="contenedorButton">
+				<button class="button"> Menu
+					
+						<ul >
+							<li><a href="#">Noticias</a></li>
+							<li><a href="TablaPos.html" target="_blank">Tabla de posiciones</a></li>
+							<li><a href="#">Fechas</a></li>
+							<li><a href="#">Goleadores</a></li>
+							<li><a href="#">Tarjetas</a></li>
+						</ul>
+						
+					
+				</button>
+				
+				
+				
+			</div>
+			<div class="VistaPreviaResultadosFecha">
+				
+					<div class="Resultado-fecha">
+						<h2>Fecha 16</h2>
+					</div>
+			</div>
+				<!--AQUI COMIENZA MASTER-->
+				<div class="VistaPreviaResultadoMaster">
+					<h2 id="Resultado-fechaMaster">Master</h2>
+				</div>
+				<div class="Resultado1Master">	<!--Master partido 1-->
+					<div class="Resultado1interno">
+						<span class="Resultado1finalMaster">14 HS</span>
+					</div>
+					<ul class="EquiposR1Master">
+						<li class="TablaE1Master">
+							<div class="Logos">
+								<img src="src/AstonVilla.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Master">
+								<div class="InternoE1R1Mas">
+									<span class="NombreE1R1Mas">AST</span>
+								</div>
+								<div class="MarcaE1R1MAS">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Master">
+							<div class="Logos">
+								<img src="src/CAA.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE1Master">
+								<div class="InternoE2R1Mas">
+									<span class="NombreE2R1Mas">CAA</span>
+								</div>
+								<div class="MarcaE2R1MAS">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado2Master">				<!--Master partido 2-->
+					<div class="Resultado2interno">
+						<span class="Resultado2finalMaster">15:15 HS</span>
+					</div>
+					<ul class="EquiposR2Master">
+						<li class="TablaE1Master">
+							<div class="Logos">
+								<img src="src/SolYLuna.png" alt="Sol y Luna" width="19" height="19">
+							</div>
+							<div class="DivisionE2Master">
+								<div class="InternoE1R2Mas">
+									<span class="NombreE1R2Mas">SYL</span>
+								</div>
+								<div class="MarcaE1R2MAS">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Master">
+							<div class="Logos">
+								<img src="src/SportFrancia.png" alt="Sport Francia" width="19" height="19">
+							</div>
+								<div class="DivisionE2Master">
+								<div class="InternoE2R2Mas">
+									<span class="NombreE1R2Mas">FRA</span>
+								</div>
+								<div class="MarcaE2R2MAS">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado3Master">			<!--Master partido 3-->
+					<div class="Resultado3interno">
+						<span class="Resultado3finalMaster">16:30 HS</span>
+					</div>
+					<ul class="EquiposR3Master">
+						<li class="TablaE1Master">
+							<div class="Logos">
+								<img src="src/AstonVilla.png" alt="Aston Villa" width="19" height="19">
+							</div>
+							<div class="DivisionE3Master">
+								<div class="InternoE1R3Mas">
+									<span class="NombreE1R3Mas">AST</span>
+								</div>
+								<div class="MarcaE1R3MAS">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Master">
+							<div class="Logos">
+								<img src="src/ElChorrillo.png" alt="El Chorrilo" width="19" height="19">
+							</div>
+								<div class="DivisionE3Master">
+								<div class="InternoE2R3Mas">
+									<span class="NombreE2R3Mas">CHO</span>
+								</div>
+								<div class="MarcaE2R3MAS">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>	
+				
+				<!--AQUI TERMINA MASTER-->
+				<!--AQUI COMIENZA MAXI-->
+				<div class="VistaPreviaResultadoMaxi">
+					<h2 id="Resultado-fechaMaxi">Maxi</h2>
+				</div>
+				<div class="Resultado1Maxi">		<!--Maxi partido 1-->
+					<div class="Resultado1interno">
+						<span class="Resultado1finalMaxi">14 HS</span>
+					</div>
+					<ul class="EquiposR1Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/LosPumas.png" alt="Los Pumas" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R1Max">
+									<span class="NombreE1R1Max">PUM</span>
+								</div>
+								<div class="MarcaE2R1MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/FCB.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE1Maxi">
+								<div class="InternoE2R1Max">
+									<span class="NombreE2R1Max">FCB</span>
+								</div>
+								<div class="MarcaE2R1MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado2Maxi">			<!--Maxi partido 2-->
+					<div class="Resultado2interno">
+						<span class="Resultado2finalMaxi">15:15 HS</span>
+					</div>
+					<ul class="EquiposR2Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/Yaguarete.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R2Max">
+									<span class="NombreE1R2Max">YAG</span>
+								</div>
+								<div class="MarcaE1R2MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/SantaBarbara.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE2Maxi">
+								<div class="InternoE2R2Max">
+									<span class="NombreE2R2Max">BAR</span>
+								</div>
+								<div class="MarcaE2R2MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado3Maxi">		<!--Maxi partido 3-->
+					<div class="Resultado3interno">
+						<span class="Resultado3finalMaxi">16:30 HS</span>
+					</div>
+					<ul class="EquiposR1Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/ElNacional.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R3Max">
+									<span class="NombreE1R3Max">NAC</span>
+								</div>
+								<div class="MarcaE1R3MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/PasoGrande.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE2Maxi">
+								<div class="InternoE2R3Max">
+									<span class="NombreE2R3Max">PAS</span>
+								</div>
+								<div class="MarcaE2R3MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+				<!--AQUI TERMINA MAXI-->
+				<!--AQUI COMIENZA SENIORS-->
+				<div class="VistaPreviaResultadoMaxi">
+					<h2 id="Resultado-fechaMaxi">Seniors</h2>
+				</div>
+				<div class="Resultado1Maxi">			<!--Seniors partido 1-->
+					<div class="Resultado1interno">
+						<span class="Resultado1finalMaxi">14 HS</span>
+					</div>
+					<ul class="EquiposR1Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/AstonVilla.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R1Max">
+									<span class="NombreE1R1Max">AST</span>
+								</div>
+								<div class="MarcaE1R1MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/CAA.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE1Maxi">
+								<div class="InternoE2R1Max">
+									<span class="NombreE2R1Max">CAA</span>
+								</div>
+								<div class="MarcaE2R1MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado1Maxi">			<!--Seniors partido 2-->
+					<div class="Resultado1interno">
+						<span class="Resultado1finalMaxi">14 HS</span>
+					</div>
+					<ul class="EquiposR1Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/AstonVilla.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R1Max">
+									<span class="NombreE1R1Max">AST</span>
+								</div>
+								<div class="MarcaE1R1MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/CAA.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE1Maxi">
+								<div class="InternoE2R1Max">
+									<span class="NombreE2R1Max">CAA</span>
+								</div>
+								<div class="MarcaE2R1MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="Resultado1Maxi">			<!--Seniors partido 3-->
+					<div class="Resultado1interno">
+						<span class="Resultado1finalMaxi">14 HS</span>
+					</div>
+					<ul class="EquiposR1Maxi">
+						<li class="TablaE1Maxi">
+							<div class="Logos">
+								<img src="src/AstonVilla.png" alt="Aston Villa" width="20" height="20">
+							</div>
+							<div class="DivisionE1Maxi">
+								<div class="InternoE1R1Max">
+									<span class="NombreE1R1Max">AST</span>
+								</div>
+								<div class="MarcaE1R1MAX">-</div>
+							</div>
+						
+						</li>
+						<li class="TablaE2Maxi">
+							<div class="Logos">
+								<img src="src/CAA.png" alt="CAA" width="20" height="20">
+							</div>
+								<div class="DivisionE1Maxi">
+								<div class="InternoE2R1Max">
+									<span class="NombreE2R1Max">CAA</span>
+								</div>
+								<div class="MarcaE2R1MAX">-</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			<!--AQUI TERMINA SENIORS-->
+
+		</section>
+		<main>                                                  <!-- Main -->
+			<div>
+				<h1></h1>                    <!-- Encabezado -->
+				<!-- Atributo target abre el enlace en una pestaña nueva, blank-->
+				<!-- Enlace externo-->
+				<p><a href="Galeria.html" target="_blank">GALERIA DE FOTOS</a></p>
+				<div class="Ig">
+					<!--<video src="src/SoldadoraInverterMMA.mp4" width="400" height="400" controls></video>-->
+				</div>
+				<!--<p><a href="#ClubLosAmigos">LOS AMIGOS DE J.M MAXI</a>></p>-->
+				<!-- Enlace a otra parte de nuestra pagina-->
+
+				<!--Atributo alt descripcion alternativa de la imagen para lector de pantalla-->
+				<!-- o falla al descargar -->
+				<!-- src="https://bit.ly/fcc-relaxing-cat" Ej de link-->
+				<img src="" alt="" width="" height="">
+				<!-- Etiqueta de image, no necesita cierre-->
+			</div>
+		</main>  
+		<footer>
+			<p>Fin de pagina</p>
+		</footer>
+	</body>
+</html>
+
