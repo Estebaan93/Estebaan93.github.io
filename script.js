@@ -26,7 +26,7 @@ form.addEventListener("submit", e=>{
 /*FIN FORMULARIO*/
 
 /*CARROUSEL*/
-let fotos=['src/1.jpg', 'src/2.jpg', 'src/26movil.jpg', 'src/4.png', 'src/5.jpg', 'src/22Empresas.jpg', 'src/24Empresas.jpg'];
+let fotos=['src/1.jpg', 'src/2.jpg', 'src/26Movil.jpg', 'src/4.png', 'src/5.jpg', 'src/22Empresas.jpg', 'src/24Empresas.jpg'];
 /*let nombres=["1", "2", "26movil"];*/
 let i=0;
 function carrousel(carrouselFunc){
