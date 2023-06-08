@@ -127,7 +127,7 @@ padding-left: 70px;
                         /*FIN EMPRESAS*/
 
 
-/*MOVILIDAD*/
+                        /*MOVILIDAD*/
 #princMovilidad{
     background-image: url("src/2.jpg");
     background-size: cover;
@@ -178,11 +178,7 @@ padding-left: 70px;
 }
 
 
-
-
-
-
-/*FIN MOVILIDAD*/
+                /*FIN MOVILIDAD*/
 footer{
     background-color: rgb(15, 15, 15);
 }
