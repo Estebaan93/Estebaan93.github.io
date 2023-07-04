@@ -282,8 +282,13 @@ p {
     position: relative;
 }
 
-                            /*FORMULARIO*/
-.casilla{
+            
+
+
+
+                        /*FORMULARIO*/ 
+
+.inputForm{
     padding: 10px;
     width: 70%;
     margin-bottom: 12px;
@@ -293,13 +298,25 @@ p {
     /*background-color: hsla(0,0%,100%,.15);*/
     background-color: rgb(0, 0, 0, .1);
 }
-.error{
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: red;
-    padding-top: 20px;
+/*.invalid{
+    border: solid 1px red;
+    box-shadow: 0 0 10px red;
+}*/
+
+/*.error{
+    border: 3px solid red;
+    color: rgb(223, 0, 0);
+    background-color: #fff8b8c0;    
+}*/
+.errorActi{
+    color: rgb(243, 3, 3);
+    font-size: 12px;
 }
+.errorInact{
+display: none;
+}
+
+
 #form{
     background-image: url("src/19.jpg");
     background-size: cover;
@@ -311,13 +328,15 @@ form{
     text-align: center;
 }
 #styleFor2{
-    margin-left: 35%; 
+    margin-left: 35%;
     margin-right: 35%;
     background-color: rgb(15, 15, 15, .7);
     border-radius: 7px;
+    /* display: block; */
+    padding-bottom: 50px;
 }
 #styleFor{
-    padding-top: 60px;
+    padding-bottom: 70px;
 }
 #buttonFor > a{
     /* background-color: whitesmoke; */
@@ -333,7 +352,11 @@ form{
 }
 
                             /*FIN FORMULARIO*/
-/*CARROUSEL*/
+                            
+                            
+                            
+                            
+                            /*CARROUSEL*/
 #carrouselFunc{
     width: 90%;
     height: 700px;

@@ -34,24 +34,25 @@
 			</div>
 				<div id="styleFor2">
 					<h1>FORMULARIO</h1>
-					<form action="#">
-						<input class="casilla" type="text" id="apellido" value="" placeholder="APELLIDO">
-						<input class="casilla" type="text" id="nombre" value="" placeholder="NOMBRE">
-						<input class="casilla" type="text" id="dni" value="" placeholder="DNI">
-						<input class="casilla" type="text" id="correo" value="" placeholder="CORREO">
-						<input class="casilla" type="text" id="telefono" value="" placeholder="TELEFONO">
-						<input class="casilla" type="text" id="direccion" value="" placeholder="DIRECCION">
-						<input class="casilla" type="text" id="ciudad" value="" placeholder="CIUDAD">
+					<form onsubmit="return validar()" id="fConta" class="formItems" >
+						<label for="fApellido"><input class="inputForm"  name="apellido" id="apellido" value="" placeholder="APELLIDO"><p class="errorInact" id="veriApellido" >APELLIDO INVALIDO</p></label>
+						<label for="fNombre"><input class="inputForm"  name="nombre" id="nombre" value="" placeholder="NOMBRE"><p class="errorInact" id="veriNom">NOMBRE INVALIDO</p></label>
+						<label for="fCorreo"><input class="inputForm"  name="correo" id="correo" value="" placeholder="CORREO"><p class="errorInact" id="veriCor">CORREO INVALIDO</p></label>
+						<label for="fTelefono"><input class="inputForm"  name="telefono" id="telefono" value="" placeholder="TELEFONO"><p class="errorInact" id="verTel">TELEFONO INVALIDO</p></label>
+						<label for="fDireccion"><input class="inputForm"  name="direccion" id="direccion" value="" placeholder="DIRECCION"><p class="errorInact" id="verDirec">DIRECCION INVALIDA</p></label>
+						<label for="fCiudad"><input class="inputForm"  name="ciudad" id="ciudad" value="" placeholder="CIUDAD" maxlength="15"><p class="errorInact" id="verCiud">CIUDAD INVALIDA</p></label>
 					
-						<input style="color: black;  
+						<button id="btnEnviar" style="color: black;  
 							font: 700 12px / 14px Roboto, Helvetica, Arial, Verdana, sans-serif;
 							text-transform: uppercase;	
 							padding: 7px 10px 7px 10px;
 							border-radius: 6px;
-							" type="submit" value="consultar disponibilidad">
-							<p class="error" id="error"></p>
+							" type="submit" onclick="return enviar()" id="btnForm" class="btnFF">registrarse
+							</button>
 					  </form>
+					  
 				</div>
+				<div id="mensaje" class="envi0Ok"></div>
 			
 			<section id="Section2">
 		
@@ -74,7 +75,7 @@
 			</div>
 			
 		</footer>
-		<script src="script.js"> </script>
+		<script src="FormValida.js"> </script>
 	</body>
 </html>
 
