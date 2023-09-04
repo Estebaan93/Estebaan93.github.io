@@ -66,11 +66,13 @@ padding-left: 70px;
                         /* RESIDENCIAL*/
 #princResidencial{
     background-image: url("src/11.jpg");
-    background-size: cover;
-    background-position: center; 
+    background-size: 100%;
+    /*background-position: center;*/ 
     background-repeat: no-repeat;
     padding-bottom: 300px;
 }
+
+
 #articuloResidencial>h1{
     text-transform: uppercase;
     color: white;
@@ -95,8 +97,8 @@ padding-left: 70px;
                         /*EMPRESAS*/
 #princEmpresas{
     background-image: url("src/22Empresas.jpg");
-    background-size: cover;
-    background-position: center; 
+    background-size: 105%;
+    /*background-position: center;*/ 
     background-repeat: no-repeat;
     padding-bottom: 300px;
 }
@@ -112,6 +114,7 @@ padding-left: 70px;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     text-align: center;
     padding-top: 220px;
+    
 }
 #articuloEmpresas{
     padding-top: 10%;
@@ -130,10 +133,10 @@ padding-left: 70px;
                         /*MOVILIDAD*/
 #princMovilidad{
     background-image: url("src/2.jpg");
-    background-size: cover;
-    background-position: center; 
+    background-size: 100%;
+    /*background-position: center;*/ 
     background-repeat: no-repeat;
-    padding-bottom: 300px;
+    padding-bottom: 350px;
 }
 #articuloMovil>h1{
     text-transform: uppercase;
@@ -317,9 +320,10 @@ display: none;
 
 #form{
     background-image: url("src/19.jpg");
-    background-size: cover;
-    background-position: center; 
+    background-size: 100%;
+    /*background-position: center; */
     background-repeat: no-repeat;
+    padding-bottom: 110px;
 }
 form{
     padding-top: 6%;
@@ -334,7 +338,7 @@ form{
     padding-bottom: 50px;
 }
 #styleFor{
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 #buttonFor > a{
     /* background-color: whitesmoke; */
@@ -355,6 +359,9 @@ form{
                             
                             
                             /*CARROUSEL*/
+#imgCarrousel{
+    border-radius: 10px ;
+}                            
 #carrouselFunc{
     width: 90%;
     height: 700px;
