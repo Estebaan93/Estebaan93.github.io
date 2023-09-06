@@ -200,6 +200,7 @@ h1{
 
 .divM{
     display: flex;
+    margin: a;
 }
 p {
     text-align: center;
