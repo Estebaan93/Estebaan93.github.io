@@ -175,7 +175,7 @@ p {
 }
 .flotante>button:hover{
     transform: scale(1.5);
-   
+    
 }
 .flotante{
     position: fixed;
