@@ -18,7 +18,7 @@ section{
     border-radius: 20px;
     padding-top: 40px;
 }
- #logoArsat{
+#logoArsat{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 32px;
     text-transform: uppercase;
@@ -27,12 +27,12 @@ section{
 .logo{
 padding-left: 70px;
 }
-#seccionGlobal > .logo > .navBar > #ul > li > a:hover{
+.seccionGlobal > .logo > .navBar > #ul > li > a:hover{
     color: black;
 }
 
 
-#seccionGlobal > .logo > .navBar > #ul{
+.seccionGlobal > .logo > .navBar > #ul{
    display: flex;
    list-style: none;
    margin: 0px;
@@ -41,7 +41,7 @@ padding-left: 70px;
    text-transform: uppercase;
     
 }
-#seccionGlobal > .logo > .navBar > #ul li{
+.seccionGlobal > .logo > .navBar > #ul li{
     margin-left: 30px;
 }
 .navBar{
@@ -80,7 +80,7 @@ h1{
 
 .divM{
     display: flex;
-    margin: a;
+    margin: auto;
 }
 p {
     text-align: center;
@@ -89,21 +89,21 @@ p {
     background-image: url(src/22Empresas.jpg);
     background-size: cover;
 }*/
-#div2interno2h1{
+.div2interno2h1{
     padding-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
 }
-#div2interno2h1>h1{
+.div2interno2h1>h1{
    font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
 }
-#div2interno2h1>p, #div4interno2h1>p{
+.div2interno2h1>p, .div4interno2h1>p{
     padding-top: 30px;
     font: 16px/22px DIN_Regular,Arial,Verdana,sans-serif;
     color: darkgray;
     text-align: justify;
 }
-#div3interno1, #div4interno2{
+.div3interno1, .div4interno2{
     padding-top: 50px;
     /*padding-left: 80px;*/
     /*padding-right: 80px; */
@@ -111,52 +111,52 @@ p {
     margin-right: 60px;
 }
 
-#div3interno1>h1, #div4interno2h1>h1{
+.div3interno1>h1, .div4interno2h1>h1{
     font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
     text-align: left;
 }
-#div3interno1>p{
+.div3interno1>p{
     padding: 80px 200px 0px 0px;
     font: 16px/22px DIN_Regular,Arial,Verdana,sans-serif;
     color: darkgray;
     text-align: justify;
     
 }
-#divMovil{
+.divMovil{
     background-image: url(src/4.png);
     background-size: cover;
     
 }
 
-#divMovil2{
+.divMovil2{
     display: flex;
 }
-#divMovil3{
+.divMovil3{
     display: flex;
     position: relative;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
 }
-#divMovil4{
+.divMovil4{
     padding-top: 300px;
     padding-left: 50px;
     padding-right: 64%;
     padding-bottom: 100px;
     height: 500px;
 }
-#divMovil4>h5{
+.divMovil4>h5{
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     font-size: 43px;
     text-transform: uppercase;
 }
-#divMovil4>p{
+.divMovil4>p{
     font: 16px/22px DIN_Regular,Arial,Verdana,sans-serif;
     text-align: left;
     padding-top: 30px;
    
 }
-#divDisponibilidad{
+.divDisponibilidad{
     border-left: 1px solid #ffffff;
     height:100%;
     left: 50%;
@@ -164,6 +164,7 @@ p {
     position: relative;
 }
 
+/*Boton flotante*/
 .flotante>button>a{
     color: black;
     font: 700 12px / 18px Roboto, Helvetica, Arial, Verdana, sans-serif;
@@ -184,8 +185,10 @@ p {
 
 }
 
+
+
                         /* RESIDENCIAL*/
-#princResidencial{
+.princResidencial{
     background-image: url("src/11.jpg");
     background-size: 100%;
     /*background-position: center;*/ 
@@ -194,20 +197,20 @@ p {
 }
 
 
-#articuloResidencial>h1{
+.articuloResidencial>h1{
     text-transform: uppercase;
     color: white;
     font-size: 43px;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     padding-top: 3;
 }
-#articuloResidencial>p{
+.articuloResidencial>p{
     font-size: large;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     text-align: center;
     padding-top: 80px;
 }
-#articuloResidencial{
+.articuloResidencial{
     padding-top: 10%;
     padding-left: 25%;
     width: 690px;
@@ -216,34 +219,34 @@ p {
                         /*FIN RESIDENCIAL*/
 
                         /*EMPRESAS*/
-#princEmpresas{
+.princEmpresas{
     background-image: url("src/22Empresas.jpg");
     background-size: 105%;
     /*background-position: center;*/ 
     background-repeat: no-repeat;
     padding-bottom: 300px;
 }
-#articuloEmpresas>h1{
+.articuloEmpresas>h1{
     text-transform: uppercase;
     color: white;
     font-size: 43px;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     padding-top: 3;
 }
-#articuloEmpresas>p{
+.articuloEmpresas>p{
     font-size: large;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     text-align: center;
     padding-top: 220px;
     
 }
-#articuloEmpresas{
+.articuloEmpresas{
     padding-top: 10%;
     padding-left: 25%;
     width: 690px;
     height: 240px;
 }
-#divMovilEmpresas{
+.divMovilEmpresas{
     background-image: url(src/24Empresas.jpg);
     background-size: cover;
     
@@ -252,51 +255,51 @@ p {
 
 
                         /*MOVILIDAD*/
-#princMovilidad{
+.princMovilidad{
     background-image: url("src/2.jpg");
     background-size: 100%;
     /*background-position: center;*/ 
     background-repeat: no-repeat;
     padding-bottom: 350px;
 }
-#articuloMovil>h1{
+.articuloMovil>h1{
     text-transform: uppercase;
     color: white;
     font-size: 43px;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     padding-top: 3;
 }
-#articuloMovil>p{
+.articuloMovil>p{
     font-size: large;
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
     text-align: center;
     padding-top: 220px;
 }
-#articuloMovil{
+.articuloMovil{
     padding-top: 5%;
     padding-left: 25%;
     width: 690px;
     height: 240px;
 }
-#divMovilMovil{
+.divMovilMovil{
     background-image: url(src/28movil.jpeg);
     background-size: cover;
     
 }
-#div3interno1Movil{
+.div3interno1Movil{
     padding-top: 50px;
     /*padding-left: 80px;*/
     /*padding-right: 80px; */
     margin-left: 40px;
     margin-right: 60px;
 }
-#div3interno1Movil>p{
+.div3interno1Movil>p{
     padding: 50px 200px 0px 0px;
     font: 16px/22px DIN_Regular,Arial,Verdana,sans-serif;
     color: darkgray;
     text-align: justify;
 }
-#div3interno1Movil>h1{
+.div3interno1Movil>h1{
     font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
     text-align: left;
 }
