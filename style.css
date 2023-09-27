@@ -133,7 +133,7 @@ p {
 }
 .divMovil3{
     display: flex;
-    position: relative;
+    /*position: relative; se desactiva porque no me funciona el boton flotante*/
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
