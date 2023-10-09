@@ -16,12 +16,12 @@ function validar(){
     let fCiudad=document.querySelector("#ciudad");
 
 
-    fApellido.classList.remove("error");
+    /*fApellido.classList.remove("error");
     fNombre.classList.remove("error");
     fCorreo.classList.remove("error");
     fTel.classList.remove("error");
     fDirec.classList.remove("error");
-    fCiudad.classList.remove("error");
+    fCiudad.classList.remove("error");*/
     
     document.querySelector('#veriApellido').classList.add('errorInact');
 	document.querySelector('#veriApellido').classList.remove('errorActi');
