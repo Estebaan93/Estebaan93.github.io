@@ -1,112 +1,131 @@
 /*PARA FORMULARIO*/
-let ffocus=document.querySelector("form input");
-ffocus.focus();
-let regNombreApell=/^[a-zA-ZÀ-ÿ\s]{1,40}$/;
-let regCorreo=/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
-let regTel= /^\d{7,14}$/;
-let regDirec=/^[\w,.]+( [.,\w]+)*$/;
+//Expresiones regulares
+const regApellNombre=/^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+const regCorreo=/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,})+$/;
+const regTel= /^\d{7,14}$/;
+const regDirec=/^[\w,.]+( [.,\w]+)*$/;
 
 
-function validar(){
-    let fApellido=document.querySelector("#apellido");
-    let fNombre=document.querySelector("#nombre");
-    let fCorreo=document.querySelector("#correo");
-    let fTel=document.querySelector("#telefono");
-    let fDirec=document.querySelector("#direccion");
-    let fCiudad=document.querySelector("#ciudad");
+function validar(e){
+    e.preventDefault();
+    let apellido=document.getElementById('apellido');
+    let nombre=document.getElementById('nombre');
+    let correo=document.getElementById('correo');
+    let telefono=document.getElementById('telefono');
+    let direccion=document.getElementById('direccion');
+    let provincia=document.getElementById('provincia');
 
+    let errorApe=document.getElementById('veriApellido');
+    let errorNom=document.getElementById('veriNom');
+    let errorCor=document.getElementById('veriCor');
+    let errorTel=document.getElementById('verTel');
+    let errorDir=document.getElementById('verDirec');
 
-    /*fApellido.classList.remove("error");
-    fNombre.classList.remove("error");
-    fCorreo.classList.remove("error");
-    fTel.classList.remove("error");
-    fDirec.classList.remove("error");
-    fCiudad.classList.remove("error");*/
+    let errorA=false;
+
+    //Limpiamos errores
+    errorApe.textContent="";
+    errorNom.textContent="";
+    errorCor.textContent="";
+    errorTel.textContent="";
+    errorDir.textContent="";
+
+    let apellidoValue=apellido.value.trim();
+    let nombreValue=nombre.value.trim();
+    let correoValue=correo.value.trim();
+    let telefonoValue=telefono.value.trim();
+    let direccionValue=direccion.value.trim();
+    let provinciaValue=provincia.value.trim();
     
-    document.querySelector('#veriApellido').classList.add('errorInact');
-	document.querySelector('#veriApellido').classList.remove('errorActi');
-    
-    document.querySelector("#veriNom").classList.add('errorInact');
-    document.querySelector("#veriNom").classList.remove('errorActi');
-    
-    document.querySelector('#veriCor').classList.add('errorInact');
-    document.querySelector('#veriCor').classList.add('errorActi');
-    
-    document.querySelector('#verTel').classList.add('errorInact');
-    document.querySelector('#verTel').classList.remove('errorActi');
-
-    document.querySelector('#verDirec').classList.add('errorInact');
-    document.querySelector('#verDirec').classList.remove('errorActi');
-
-    document.querySelector('#verCiud').classList.add('errorInact');
-    document.querySelector('#verCiud').classList.remove('errorActi');
-
-    let msj=document.querySelector("#mensaje");
-    let errorA=false
-
-    //Apellido
-    if(fApellido.value=="" || !regNombreApell.test(fApellido.value)){
-        fApellido.classList.add("error");
-        document.querySelector('#veriApellido').classList.remove('errorInact');
-        document.querySelector('#veriApellido').classList.add('errorActi');
+ 
+    //Validar Apellido
+    if(apellido.value=="" || !regApellNombre.test(apellido.value)){
+        errorApe.textContent="El apellido es invalido";
+        errorApe.classList.add('errorActi');
+        apellido.style.border="1px solid #FF0000";
         errorA=true;
     }
 
     //Nombre
-    if(fNombre.value=="" || !regNombreApell.test(fNombre.value)){
-        fNombre.classList.add("error");
-        document.querySelector('#veriNom').classList.remove('errorInact');
-        document.querySelector('#veriNom').classList.add('errorActi');
+    if(nombre.value=="" || !regApellNombre.test(nombre.value)){
+        errorNom.textContent="El nombre es invalido";
+        errorNom.classList.add('errorActi');
+        nombre.style.border="1px solid #FF0000";
         errorA=true;
     }
     
-    //Correo
-    if(fCorreo.value=="" || !regCorreo.test(fCorreo.value)){
-        fCorreo.classList.add("error");
-        document.querySelector('#veriCor').classList.remove('errorInact');
-        document.querySelector('#veriCor').classList.add('errorActi');
+    //Validar Correo
+    if(correo.value=="" || !regCorreo.test(correo.value)){
+        errorCor.textContent="El correo es invalido";
+        errorCor.classList.add('errorActi');
+        correo.style.border="1px solid #FF0000";
         errorA=true;
     }
 
-    //Tel
-    if(fTel.value=="" || !regTel.test(fTel.value)){
-        fTel.classList.add("error");
-        document.querySelector('#verTel').classList.remove('errorInact');
-        document.querySelector('#verTel').classList.add('errorActi');
+    //Validar Telefono
+    if(telefono.value=="" || !regTel.test(telefono.value)){
+        errorTel.textContent="El telefono es invalido";
+        errorTel.classList.add('errorActi');
+        telefono.style.border="1px solid #FF0000";
         errorA=true;
     }
 
-    //Dir
-    if(fDirec.value=="" || !regDirec.test(fDirec.value)){
-        fDirec.classList.add("error");
-        document.querySelector('#verDirec').classList.remove('errorInact');
-        document.querySelector('#verDirec').classList.add('errorActi');
+    //Validar Direccion
+    if(direccion.value=="" || !regDirec.test(direccion.value)){
+        errorDir.textContent="Error de direccion";
+        errorDir.classList.add('errorActi');
+        direccion.style.border="1px solid #FF0000";
         errorA=true;
     }
 
-    //Ciud
-    if(fCiudad.value=="" || !regNombreApell.test(fCiudad.value)){
-        fCiudad.classList.add("error");
-        document.querySelector('#verCiud').classList.remove('errorInact');
-        document.querySelector('#verCiud').classList.add('errorActi');
+    //Validar Provincia
+    if(provincia.value==""){
+        provincia.style.border="1px solid #FF0000";
         errorA=true;
     }
 
     if(errorA){
         return false;
     }else{
-        let p=document.createElement("p");
-        p.innerHTML="Se registro "+fApellido.value + " " +fNombre.value +", se envio al correo "+fCorreo.value;
-        msj.appendChild(p);
-        document.forms['fConta'].reset();
-        let ffocus=document.querySelector("form input");
-        ffocus.focus();
+        //Crear elementos en el DOM
+        let registro=document.getElementById('Registro');
+        let msjNuevo=document.createElement("p");
+        let msjFinal="Se registro: " + apellidoValue +" "+ nombreValue +" "+ correoValue +" Districto: "+provincia.value;
+        msjNuevo.textContent=msjFinal;
+        registro.appendChild(msjNuevo);
+
+        //Limpiamos stylos
+        apellido.style.border="1px solid #ccc";
+        nombre.style.border="1px solid #ccc";
+        correo.style.border="1px solid #ccc";
+        direccion.style.border="1px solid #ccc";
+        telefono.style.border="1px solid #ccc";
+        provincia.style.border="1px solid #ccc";
     }
-   
+    
+    let frm=document.getElementById('Formulario');
+    //Limpiamos campos
+     apellido.value="";
+     nombre.value="";
+     correo.value="";
+     telefono.value="",
+     direccion.value="";
+
+    //Hacemos focus al primer input(Apellido)
+    apellido.focus();
+
+    //Reseteamos el formulario
+    frm.reset();
     return false;
-
-
 }
+
+window.onload=function(){
+    let apellido=document.getElementById("apellido");
+    apellido.focus();
+};
+// Agrega un controlador de eventos al formulario
+let formulario = document.getElementById("Formulario");
+formulario.addEventListener("submit", validar);
 
 
 

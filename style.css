@@ -320,37 +320,26 @@ p {
     padding: 10px;
     width: 70%;
     margin-bottom: 12px;
-    /*text-transform: uppercase;*/
     border-radius: 4px;
     border: 1px solid rgb(184, 184, 184);
-    /*background-color: hsla(0,0%,100%,.15);*/
     background-color: rgb(0, 0, 0, .1);
 }
-/*.invalid{
-    border: solid 1px red;
-    box-shadow: 0 0 10px red;
-}*/
 
-/*.error{
-    border: 3px solid red;
-    color: rgb(223, 0, 0);
-    background-color: #fff8b8c0;    
-}*/
 .errorActi{
     color: rgb(243, 3, 3);
     font-size: 12px;
+    display: block;
 }
-.errorInact{
-display: none;
-}
-
 
 #form{
     background-image: url("src/19.jpg");
     background-size: 100%;
-    /*background-position: center; */
     background-repeat: no-repeat;
     padding-bottom: 110px;
+}
+#provincia{
+    background-color: rgb(15, 15, 15, .7);
+    width: 75%;
 }
 form{
     padding-top: 6%;

@@ -34,25 +34,35 @@
 			</div>
 				<div id="styleFor2">
 					<h1>FORMULARIO</h1>
-					<form onsubmit="return validar()" id="fConta" class="formItems" >
-						<label for="fApellido"><input class="inputForm"  name="apellido" id="apellido" value="" placeholder="APELLIDO"><p class="errorInact" id="veriApellido" >APELLIDO INVALIDO</p></label>
-						<label for="fNombre"><input class="inputForm"  name="nombre" id="nombre" value="" placeholder="NOMBRE"><p class="errorInact" id="veriNom">NOMBRE INVALIDO</p></label>
-						<label for="fCorreo"><input class="inputForm"  name="correo" id="correo" value="" placeholder="CORREO"><p class="errorInact" id="veriCor">CORREO INVALIDO</p></label>
-						<label for="fTelefono"><input class="inputForm"  name="telefono" id="telefono" value="" placeholder="TELEFONO"><p class="errorInact" id="verTel">TELEFONO INVALIDO</p></label>
-						<label for="fDireccion"><input class="inputForm"  name="direccion" id="direccion" value="" placeholder="DIRECCION"><p class="errorInact" id="verDirec">DIRECCION INVALIDA</p></label>
-						<label for="fCiudad"><input class="inputForm"  name="ciudad" id="ciudad" value="" placeholder="CIUDAD" maxlength="15"><p class="errorInact" id="verCiud">CIUDAD INVALIDA</p></label>
-					
+					<form id="Formulario" onsubmit="return validar()">
+						<label for="fApellido"><input class="inputForm"  name="apellido" id="apellido"  placeholder="APELLIDO"><span class="errorInact" id="veriApellido" > </span></label>
+						<label for="fNombre"><input class="inputForm"  name="nombre" id="nombre"  placeholder="NOMBRE"><span class="errorInact" id="veriNom"> </span></label>
+						<label for="fCorreo"><input class="inputForm"  name="correo" id="correo"  placeholder="CORREO"><span class="errorInact" id="veriCor"> </span></label>
+						<label for="fTelefono"><input class="inputForm"  name="telefono" id="telefono"  placeholder="TELEFONO"><span class="errorInact" id="verTel"> </span></label>
+						<label for="fDireccion"><input class="inputForm"  name="direccion" id="direccion"  placeholder="DIRECCION"><span class="errorInact" id="verDirec"> </span></label>
+						<select class="inputForm"  name="provincia" id="provincia">
+							<option disabled selected value="">Provincia</option>
+							<option>Buenos Aires </option>
+							<option>Catamarca </option>
+							<option>Chaco </option>
+							<option>Chubut </option>
+							<option>Córdoba </option>
+							<option>Corrientes </option>
+							<option>Entre Ríos </option>
+							<option>Formosa </option>
+							<option>San Luis</option>
+							<option>Mendoza</option>
+						</select> <br>        
 						<button id="btnEnviar" style="color: black;  
 							font: 700 12px / 14px Roboto, Helvetica, Arial, Verdana, sans-serif;
 							text-transform: uppercase;	
 							padding: 7px 10px 7px 10px;
-							border-radius: 6px;
-							" type="submit" onclick="return enviar()" id="btnForm" class="btnFF">registrarse
+							border-radius: 6px;" 
+							type="submit" value="submit" id="btnForm">registrarse
 							</button>
-					  </form>
-					  
+					  </form> 
 				</div>
-			<div id="mensaje" class="envi0Ok"></div>
+			<div id="Registro" class="envi0Ok"></div>
 			
 			<section id="Section2">
 		
