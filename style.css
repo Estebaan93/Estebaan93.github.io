@@ -85,14 +85,16 @@ h1{
 p {
     text-align: center;
 }
-/*#div2interno1{
-    background-image: url(src/22Empresas.jpg);
+ /*.div2interno1{
+   background-image: url(src/22Empresas.jpg);
     background-size: cover;
+    width: 50%;
 }*/
 .div2interno2h1{
     padding-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
+    
 }
 .div2interno2h1>h1{
    font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
