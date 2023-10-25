@@ -70,6 +70,11 @@ footer{
 body{
     background-color: black;
 }
+.bodyIEM{
+    background-image: url("src/pexels-mahdi-bafande-14226381.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
 
 h1{
     color:white;
@@ -261,7 +266,7 @@ p {
                         /*FIN EMPRESAS*/
 
 
-                        /*MOVILIDAD*/
+                        /*MOVILIDAD*/                       
 .princMovilidad{
     background-image: url("src/2.jpg");
     background-size: 100%;
