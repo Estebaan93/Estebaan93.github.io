@@ -87,6 +87,9 @@ h1{
     display: flex;
     margin: 0px;
 }
+.divM>img{
+    padding-bottom: 15px;
+}
 p {
     text-align: center;
 }
