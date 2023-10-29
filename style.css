@@ -85,7 +85,7 @@ h1{
 
 .divM{
     display: flex;
-    margin: auto;
+    margin: 0px;
 }
 p {
     text-align: center;
@@ -95,12 +95,13 @@ p {
     background-size: cover;
     width: 50%;
 }*/
-.div2interno2h1{
+.div4interno2h1, .div2interno2h1{
     padding-top: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-    
+    padding-left: 30px;
+    padding-right: 10px;
+    height: 50%;
 }
+
 .div2interno2h1>h1{
    font: 50px/50px DIN_Bold,Arial,Verdana,sans-serif;
 }
