@@ -83,12 +83,31 @@ h1{
     font-family: DIN_Regular,Arial,Verdana,sans-serif;
 }
 
+
 .divM{
     display: flex;
     margin: 0px;
+    width: 100%;
+    
 }
+@media only screen and (max-width: 1200px){
+    .divM{
+        display: block;
+        
+    }
+    .divM>img{
+        padding-left: 15%;
+    }
+    .divM>article>h1{
+       text-align: center;
+    }
+}
+
+
 .divM>img{
     padding-bottom: 15px;
+   
+    max-height: auto;
 }
 p {
     text-align: center;
